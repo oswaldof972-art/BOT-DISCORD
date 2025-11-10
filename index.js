@@ -23,20 +23,20 @@ client.once('ready', () => {
 // Mensaje de bienvenida
 client.on('guildMemberAdd', member => {
   const canal = member.guild.systemChannel; // canal por defecto de bienvenida
-  if(canal){
+  if (canal) {
     canal.send(¡Bienvenido al servidor, ${member.user.tag}! 🎉);
   }
 });
 
 // Comandos
 client.on('messageCreate', message => {
-  if(message.author.bot) return; // Ignorar otros bots
+  if (message.author.bot) return; // Ignorar otros bots
 
-  if(message.content === '!ping'){
+  if (message.content === '!ping') {
     message.channel.send('Pong!');
   }
 
-  if(message.content === '!info'){
+  if (message.content === '!info') {
     message.channel.send(Hola ${message.author}, soy un bot de prueba hecho en Discord.js.);
   }
 });
