@@ -1,27 +1,18 @@
 {
-
-  "name": "bot-discord",
+  "name": "bot-bitacora",
   "version": "1.0.0",
+  "description": "Bot de Discord para bitácora",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "start": "node index.js"
-  },
-  "dependencies": {
-    "discord.js": "^14.15.3"
-
-  "name": "bot---bitacora",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "oswaldo",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "discord.js": "^14.24.2"
-
+    "discord.js": "^14.24.2",
+    "dotenv": "^16.3.1"
   }
 }
