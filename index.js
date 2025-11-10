@@ -1,4 +1,5 @@
 // index.js
+require('dotenv').config();
 const { Client, GatewayIntentBits, Partials } = require('discord.js');
 const express = require('express');
 
@@ -40,8 +41,8 @@ client.on('messageCreate', message => {
   }
 });
 
-// Iniciar sesión con tu token
-client.login('MTQzNzM3ODU2OTY5NjMxNzQ3NA.GGi8gt.Swo6b9Y0gBDUHCDZ_nxbGpxFIuXmamNT3Z-yWg'); // 🔑 Reemplaza con tu token nuevo
+// Iniciar sesión con tu token desde .env
+client.login(process.env.DISCORD_TOKEN);
 
 // --- Mini servidor para Render ---
 const app = express();
