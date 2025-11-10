@@ -22,7 +22,7 @@ client.once('ready', () => {
 
 // Mensaje de bienvenida
 client.on('guildMemberAdd', member => {
-  const canal = member.guild.systemChannel; // canal por defecto de bienvenida
+  const canal = member.guild.systemChannel;
   if (canal) {
     canal.send(¡Bienvenido al servidor, ${member.user.tag}! 🎉);
   }
@@ -30,7 +30,7 @@ client.on('guildMemberAdd', member => {
 
 // Comandos
 client.on('messageCreate', message => {
-  if (message.author.bot) return; // Ignorar otros bots
+  if (message.author.bot) return;
 
   if (message.content === '!ping') {
     message.channel.send('Pong!');
@@ -41,7 +41,7 @@ client.on('messageCreate', message => {
   }
 });
 
-// Iniciar sesión con tu token desde .env
+// Iniciar sesión con el token desde .env
 client.login(process.env.DISCORD_TOKEN);
 
 // --- Mini servidor para Render ---
