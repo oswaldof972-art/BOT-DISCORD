@@ -22,7 +22,7 @@ client.once('ready', () => {
 
 // Mensaje de bienvenida
 client.on('guildMemberAdd', member => {
-  const canal = member.guild.systemChannel;
+  const canal = member.guild.systemChannel; // canal por defecto de bienvenida
   if (canal) {
     canal.send(¡Bienvenido al servidor, ${member.user.tag}! 🎉);
   }
@@ -53,5 +53,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(Servidor Express escuchando en puerto ${PORT});
+  console.log(Servidor Express escuchando en puerto ${PORT});
 });
