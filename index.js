@@ -22,7 +22,7 @@ client.once('ready', () => {
 
 // Mensaje de bienvenida
 client.on('guildMemberAdd', member => {
-  const canal = member.guild.systemChannel; // canal por defecto de bienvenida
+  const canal = member.guild.systemChannel;
   if (canal) {
     canal.send(¡Bienvenido al servidor, ${member.user.tag}! 🎉);
   }
