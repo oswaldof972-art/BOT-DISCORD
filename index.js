@@ -41,7 +41,7 @@ client.on('messageCreate', message => {
 });
 
 // Iniciar sesión con tu token
-client.login('MTQzNzM3ODU2OTY5NjMxNzQ3NA.GsBj3v.fpgyUd1AnURsROmaHZxe-6Dg23zPcXu31-pbMw'); // 🔑 Reemplaza con tu token nuevo
+client.login('MTQzNzM3ODU2OTY5NjMxNzQ3NA.GGi8gt.Swo6b9Y0gBDUHCDZ_nxbGpxFIuXmamNT3Z-yWg'); // 🔑 Reemplaza con tu token nuevo
 
 // --- Mini servidor para Render ---
 const app = express();
